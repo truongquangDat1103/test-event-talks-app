@@ -1,0 +1,29 @@
+# Byte-compiled / optimized / ActionScript bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Caching data files
+releases_cache.json
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Operating System files
+Thumbs.db
+db.files
+Desktop.ini
+.DS_Store
