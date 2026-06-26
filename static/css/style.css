@@ -1144,4 +1144,178 @@ body {
         text-align: center;
         gap: 10px;
     }
+    
+    .sort-actions-group {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+    }
 }
+
+/* Layout for Sort & Export action group */
+.sort-actions-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Icon-only Button (Theme Toggle) */
+.btn-icon {
+    padding: 10px;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Copy to Clipboard Button in Card Footer */
+.btn-copy {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--card-border);
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    padding: 8px 14px;
+    margin-right: 8px;
+}
+
+.btn-copy:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--text-primary);
+    border-color: var(--text-muted);
+}
+
+.btn-copy.copied {
+    background: rgba(16, 185, 129, 0.1);
+    color: var(--color-feature);
+    border-color: rgba(16, 185, 129, 0.3);
+}
+
+/* --- LIGHT THEME STYLING OVERRIDES --- */
+body.light-theme {
+    --bg-primary: #f8fafc;
+    --bg-secondary: #f1f5f9;
+    --card-bg: rgba(255, 255, 255, 0.75);
+    --card-border: rgba(0, 0, 0, 0.08);
+    --card-hover-border: rgba(59, 130, 246, 0.4);
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --text-muted: #64748b;
+}
+
+/* Smooth transition when swapping themes */
+body {
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.card, .release-card, .btn, .chip, .search-box input, .custom-select {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body.light-theme .glow-sphere {
+    opacity: 0.06;
+}
+
+body.light-theme .logo-wrapper {
+    background: rgba(0, 0, 0, 0.02);
+}
+
+body.light-theme .search-box input {
+    background: rgba(255, 255, 255, 0.85);
+    border-color: rgba(0, 0, 0, 0.1);
+    color: #0f172a;
+}
+
+body.light-theme .search-box input:focus {
+    background: #ffffff;
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+body.light-theme .chip {
+    background: rgba(0, 0, 0, 0.03);
+    color: #475569;
+}
+
+body.light-theme .chip:hover {
+    background: rgba(0, 0, 0, 0.06);
+    color: #0f172a;
+}
+
+body.light-theme .chip.active {
+    background: rgba(59, 130, 246, 0.08);
+    color: var(--accent-blue);
+}
+
+body.light-theme .chip-count {
+    background: rgba(0, 0, 0, 0.06);
+}
+
+body.light-theme .custom-select {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-color: rgba(0, 0, 0, 0.1);
+    color: #0f172a;
+}
+
+body.light-theme .btn-secondary {
+    background: rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    color: #334155;
+}
+
+body.light-theme .btn-secondary:hover {
+    background: rgba(0, 0, 0, 0.06);
+    border-color: rgba(0, 0, 0, 0.18);
+    color: #0f172a;
+}
+
+body.light-theme .btn-copy {
+    background: rgba(0, 0, 0, 0.02);
+}
+
+body.light-theme .btn-copy:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+body.light-theme .release-card {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+}
+
+body.light-theme .release-card:hover {
+    box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.08), 0 4px 6px -2px rgba(59, 130, 246, 0.04);
+}
+
+body.light-theme .release-card-body ul {
+    color: #475569;
+}
+
+body.light-theme .release-card-footer {
+    border-top-color: rgba(0, 0, 0, 0.05);
+}
+
+body.light-theme .mock-tweet {
+    background: #ffffff;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+body.light-theme .mock-name {
+    color: #0f172a;
+}
+
+body.light-theme .mock-tweet-content {
+    color: #0f172a;
+}
+
+body.light-theme .mock-card-preview {
+    background: #ffffff;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+body.light-theme .mock-card-title {
+    color: #0f172a;
+}
+
+body.light-theme .mock-avatar {
+    background: #f1f5f9;
+}
+
